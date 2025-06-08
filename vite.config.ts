@@ -3,9 +3,8 @@ import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: './', // ←★これを追加
+  base: '/check-map-app/', // 👈 ここが大事！リポジトリ名と一致させる
   plugins: [react()],
-  logLevel: 'info',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
@@ -14,5 +13,4 @@ export default defineConfig({
   build: {
     outDir: 'docs',
   },
-  base: '/check-map-app/', // ✅ ←これを追加（プロジェクト名に合わせて）
 });
