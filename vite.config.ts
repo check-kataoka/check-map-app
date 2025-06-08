@@ -14,4 +14,5 @@ export default defineConfig({
   build: {
     outDir: 'docs',
   },
+  base: '/check-map-app/', // ✅ ←これを追加（プロジェクト名に合わせて）
 });
