@@ -11,7 +11,7 @@ const raw = await csv().fromFile(csvPath);
 const jsonArray = raw.map((item) => ({
   name: item['物件名'],
   kana: item['物件名カナ'],
-  postal: item['郵便番号'],
+  zip: item['郵便番号'],
   address: item['住所'],
   lat: parseFloat(item['緯度']),
   lng: parseFloat(item['経度']),

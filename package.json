@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "csv": "node scripts/csv2json.mjs",
-    "build": "npm run csv && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "test": "vitest"
   },
