@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 画面全体の配色とフォント */
+body {
+  @apply bg-secondary text-textMain font-sans;
+}
+
+/* 検索バー：クリック時リングを赤に */
+input:focus {
+  @apply outline-none ring-2 ring-primary;
+}
+
+/* ボタン（現在地から経路案内）を赤系に統一 */
+button {
+  @apply bg-primary text-white font-semibold px-4 py-2 rounded-lg shadow transition;
+}
+button:hover {
+  @apply bg-primary-dark;
+}
+button:active {
+  @apply bg-primary-press;
+}
