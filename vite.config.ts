@@ -4,32 +4,33 @@ import { resolve } from 'path';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  base: '/check-map-app/', // GitHub Pages用パス
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico'],
+      includeAssets: ['favicon.svg'],
       manifest: {
         name: 'CHECK MAP',
-        short_name: 'CHECK',
-        start_url: '/',
+        short_name: 'CHECK MAP',
+        start_url: '.',
         display: 'standalone',
         background_color: '#ffffff',
-        theme_color: '#D7362F',
+        theme_color: '#ff0000',
         icons: [
           {
             src: 'icons/icon-192x192.png',
             sizes: '192x192',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
             src: 'icons/icon-512x512.png',
             sizes: '512x512',
-            type: 'image/png'
-          }
-        ]
-      }
-    })
+            type: 'image/png',
+          },
+        ],
+      },
+    }),
   ],
   resolve: {
     alias: {
