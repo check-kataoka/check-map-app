@@ -1,3 +1,5 @@
+// src/main.tsx
+import './registerSW'; // ← これを一番上に追加
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './app';
