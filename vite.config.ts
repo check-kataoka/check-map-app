@@ -13,19 +13,18 @@ export default defineConfig({
       manifest: {
         name: 'CHECK MAP',
         short_name: 'CHECK MAP',
-        start_url: '/check-map-app/',
-        scope: '/check-map-app/',
+        start_url: '.',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#ff0000',
         icons: [
           {
-            src: 'icons/icon-192.png',
+            src: 'icons/icon-192.png', // ← 修正済み
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'icons/icon-512.png',
+            src: 'icons/icon-512.png', // ← 修正済み
             sizes: '512x512',
             type: 'image/png',
           },
